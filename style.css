@@ -16,9 +16,10 @@ body {
 }
 
 .wrapper {
-    display: block;
-    max-width: 960px;
+    width: 100%;
+    max-width: 1032px;
     margin: 0 auto;
+    padding: 16 16;
 }
 
 
@@ -38,14 +39,14 @@ a {
     height: 80px;
 }
 
-#header .inner {
+#header .inner-wrapper {
     display: flex;
     align-items: center;
 
 }
 
 .logo {
-    width: 100px;
+    width: 100%;
     line-height: 1px;
     margin-right: 60px;
     object-fit: contain;/*親要素の大きさに合わせて中身が拡大する。
