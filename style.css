@@ -49,10 +49,11 @@ a {
     width: 100%;
     line-height: 1px;
     margin-right: 60px;
-    object-fit: contain;/*親要素の大きさに合わせて中身が拡大する。
+    object-fit: contain;
+    /*親要素の大きさに合わせて中身が拡大する。
     containは全体が拡大。画像全部が見えるように比率を保ったまま。rogo
     敬はcontain*/
-    
+
 }
 
 #header .inner ul {
@@ -86,10 +87,11 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-    #header .inner{
+    #header .inner {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .inquiry {
         display: none;
     }
@@ -115,56 +117,69 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-    
+
     #NEWS .list {
         display: flex;
         flex-direction: column;
         margin-bottom: 80px;
     }
-    #NEWS .list li{
+
+    #NEWS .list li {
         width: 100%;
         border-right: none;
         padding: 10 0;
         margin-bottom: 20px;
 
     }
-    #NEWS .list li :last-child{
-    margin-bottom: 0;
+
+    #NEWS .list li :last-child {
+        margin-bottom: 0;
     }
-    #ABOUT{
+
+    #ABOUT {
         flex-direction: column;
         margin-bottom: 80px;
-    }i
-#footer .information2{
-    flex-direction: column;
+    }
+
+    i #footer .information2 {
+        flex-direction: column;
         align-items: flex-start;
 
+    }
 }
-}
+
 #NEWS .list li {
     width: calc(100%/3);
     border-right: solid 1px color(black);
-    padding: 20px 20px;
+    padding: 10px 20px;
 
 
 }
 
 #NEWS .list li:first-child {
-    padding-left: none;
+    padding: 10 20 10 0;
     border-left: none;
 }
 
 #NEWS .list li:last-child {
     border-right: none;
-    padding-right: none;
+    padding: 10 0 10 20;
 }
-
+#Business-list .title::before {
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    top: 50%;
+    left: -18px;}
+    
 #NEWS .list li .date-area {
-    margin-bottom: 16px;
+    margin-bottom: 25px;
     font-size: 10px;
 }
 
-#NEWS .list li .date-area span {
+#NEWS .list li .date-area span::before{
+    
     width: 40px;
     height: 15px;
     background: color(black);
@@ -175,6 +190,9 @@ a {
     margin-left: 10px;
     font-size: 10px;
     align-items: center;
+    position: absolute;
+    top: 0;
+    left: 16px;
 }
 
 #ABOUT {
@@ -247,15 +265,17 @@ a {
     left: -18px;
 
 }
-#COMPANY{
+
+#COMPANY {
     height: 750px;
     display: flex;
     align-items: center;
     padding: 100px auto 100px 50px;
-position: relative;
+    position: relative;
 
 }
-#COMPANY .text{
+
+#COMPANY .text {
     width: 40%;
     background-color: black;
     position: absolute;
@@ -263,51 +283,53 @@ position: relative;
     left: 0;
 }
 
-#COMPANY .img{
+#COMPANY .img {
     width: 48%;
     position: absolute;
     top: 100px;
     height: 500px;
-    
+
 
 
 }
-#COMPANY .information1{
+
+#COMPANY .information1 {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
-#COMPANY .information1 dt{
+
+#COMPANY .information1 dt {
     margin-top: 0;
     width: 20px;
 
 }
-#COMPANY .information1 dd{
+
+#COMPANY .information1 dd {
     width: 80%;
     margin-top: 0;
 
 }
-#footer{
+
+#footer {
     margin-bottom: 20px;
-    background-color: #fff
-    ;
-}
-#footer .information2{
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 50 0;
-
+    background-color: #fff;
 }
 
+#footer .information2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50 0;
 
-#footer .information2 .logo{
+}
+
+
+#footer .information2 .logo {
     line-height: 1px;
 }
-#footer .information2 p small{
+
+#footer .information2 p small {
     font-size: 0.25rem;
     color: rgb(44, 44, 44);
 }
-
-
-
