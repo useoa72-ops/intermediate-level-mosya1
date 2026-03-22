@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: beige;
+    background-color: rgb(251, 251, 245);
     color: black;
     font-size: 0.9rem;
 }
@@ -21,10 +21,8 @@ body {
     margin: 0 auto;
 }
 
-.logo {
-    width: 100%;
-    margin-right: 60px;
-}
+
+
 
 a {
     color: black;
@@ -50,6 +48,10 @@ a {
     width: 100px;
     line-height: 1px;
     margin-right: 60px;
+    object-fit: contain;/*親要素の大きさに合わせて中身が拡大する。
+    containは全体が拡大。画像全部が見えるように比率を保ったまま。rogo
+    敬はcontain*/
+    
 }
 
 #header .inner ul {
@@ -93,10 +95,11 @@ a {
 }
 
 /*スマホの画面幅*/
-#mainvisual {
+#mainvisual img {
     margin-bottom: 200px;
     width: 100%;
     height: calc(100vh - 80px);
+    object-fit: cover;
 
 }
 
@@ -178,11 +181,12 @@ a {
     margin-bottom: 120px;
 }
 
-#About .img {
+#About img {
     margin-bottom: 30px;
     width: 100%;
     height: calc(100vh - 80px);
     margin-left: 0%;
+    object-fit: cover;
 }
 
 #About .text {
