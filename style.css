@@ -119,13 +119,13 @@ a {
 }
 
 #NEWS .list li:first-child {
-    padding: 10 20 10 0;
+    padding: 10px 20px 10px 0;
     border-left: none;
 }
 
 #NEWS .list li:last-child {
     border-right: none;
-    padding: 10 0 10 20;
+    padding: 10px 0 10px 20px;
 }
 
 
@@ -134,7 +134,7 @@ a {
     font-size: 10px;
 }
 
-#NEWS .list li .date-area span::before {
+#NEWS .list li .date-area span {
 
     width: 40px;
     height: 15px;
@@ -145,7 +145,8 @@ a {
     display: flex;
     margin-left: 10px;
     font-size: 10px;
-    align-items: center;
+    display: inline-block;
+    text-align: center;
     position: absolute;
     top: 0;
     left: 16px;
@@ -162,7 +163,7 @@ a {
     #NEWS .list li {
         width: 100%;
         border-right: none;
-        padding: 10 0;
+        padding: 10px 0;
         margin-bottom: 20px;
 
     }
