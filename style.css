@@ -39,31 +39,11 @@ a {
     height: 80px;
 }
 
-#header .inner-wrapper {
+#header .inner-wrapper nav ul {
     display: flex;
     align-items: center;
-
-}
-
-.logo {
-    width: 10%;
-    line-height: 1px;
-    margin-right: 60px;
-    object-fit: contain;
-    /*親要素の大きさに合わせて中身が拡大する。
-    containは全体が拡大。画像全部が見えるように比率を保ったまま。rogo
-    敬はcontain*/
-
-}
-
-#header .inner ul {
-    display: flex;
-    align-items: center;
-}
-
-#header .inner li {
-    margin-right: 30px;
-
+    list-style: none;
+    gap: 30px;
 }
 
 #header .inner li:last-child {
@@ -71,7 +51,7 @@ a {
 }
 
 #header .inquiry {
-    width: 240px;
+    width: 160px;
     height: 80px;
     line-height: 80px;
     background-color: black;
@@ -86,6 +66,18 @@ a {
     opacity: 0.7;
 }
 
+.logo {
+    width: 10%;
+    line-height: 1px;
+    margin-right: 60px;
+    object-fit: contain;
+    /*親要素の大きさに合わせて中身が拡大する。
+    containは全体が拡大。画像全部が見えるように比率を保ったまま。rogo
+    敬はcontain*/
+
+}
+
+
 @media screen and (max-width: 900px) {
     #header .inner {
         flex-direction: column;
@@ -98,8 +90,9 @@ a {
 }
 
 /*スマホの画面幅*/
+
 #mainvisual img {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     width: 100%;
     height: calc(100vh - 80px);
     object-fit: cover;
@@ -114,6 +107,48 @@ a {
 #NEWS .list {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+#NEWS .list li {
+    width: calc(100%/3);
+    border-right: solid 1px color(black);
+    padding: 10px 20px;
+
+
+}
+
+#NEWS .list li:first-child {
+    padding: 10 20 10 0;
+    border-left: none;
+}
+
+#NEWS .list li:last-child {
+    border-right: none;
+    padding: 10 0 10 20;
+}
+
+
+#NEWS .list li .date-area {
+    margin-bottom: 25px;
+    font-size: 10px;
+}
+
+#NEWS .list li .date-area span::before {
+
+    width: 40px;
+    height: 15px;
+    background: color(black);
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 10px;
+    font-size: 10px;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 16px;
 }
 
 @media screen and (max-width: 900px) {
@@ -148,52 +183,7 @@ a {
     }
 }
 
-#NEWS .list li {
-    width: calc(100%/3);
-    border-right: solid 1px color(black);
-    padding: 10px 20px;
 
-
-}
-
-#NEWS .list li:first-child {
-    padding: 10 20 10 0;
-    border-left: none;
-}
-
-#NEWS .list li:last-child {
-    border-right: none;
-    padding: 10 0 10 20;
-}
-#Business-list .title::before {
-    position: absolute;
-    width: 10px;
-    height: 1px;
-    background-color: black;
-    top: 50%;
-    left: -18px;}
-    
-#NEWS .list li .date-area {
-    margin-bottom: 25px;
-    font-size: 10px;
-}
-
-#NEWS .list li .date-area span::before{
-    
-    width: 40px;
-    height: 15px;
-    background: color(black);
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 20px;
-    display: flex;
-    margin-left: 10px;
-    font-size: 10px;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    left: 16px;
-}
 
 #ABOUT {
     display: flex;
@@ -220,51 +210,52 @@ a {
     margin-bottom: 200px;
 }
 
-.Business-list {
+#Business .flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
     padding: 0% 10%;
+    gap: 50px;
 }
 
-#Business-list .left {
-    width: 48%;
-    margin-top: 150px;
-    margin-bottom: 0;
+#Business .flex .item{
+ width: auto;
+ height: auto;   
 
 }
+#Business .flex .item:nth-child(even){
+align-self : flex-end;}
 
-#Business-list .right {
-    width: 48%;
-    margin-top: 70px;
-}
-
-#Business-list .title {
-    font-size: 16px;
-    margin: 0 0 16 10;
-    font-weight: bold;
-    position: relative;
-}
-
-#Business-list .title img {
-    width: auto;
-    height: auto;
-
-}
-
-#Business-list .item {
-    margin-bottom: 60px;
-}
-
-#Business-list .title::before {
+#Business .flex .title::before {
     position: absolute;
     width: 10px;
     height: 1px;
     background-color: black;
     top: 50%;
     left: -18px;
+}
+
+
+
+#Business .flex .title {
+    font-size: 16px;
+    margin: 0 0 16 10;
+    font-weight: bold;
+    position: relative;
+}
+
+#Business .flex .title img {
+    
 
 }
+
+#Business .flex .item {
+    margin-bottom: 60px;
+}
+
+
+
 
 #COMPANY {
     height: 750px;
