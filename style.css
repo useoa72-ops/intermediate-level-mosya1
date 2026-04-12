@@ -62,7 +62,7 @@ a {
     
 }
 
-#header .inner-wrapper nav ul{
+#header  nav ul{
     display: flex;
     list-style: none;
     gap: 30px;
