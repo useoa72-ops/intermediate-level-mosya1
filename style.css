@@ -48,15 +48,14 @@ a {
     敬はcontain*/
 
 }
-#header .logo img {
+#header .logo  img {
     display: block;
     width: 100%;
     height: auto;
 }
-#header .inner-wrapper  {
+#header .inner-wrapper nav ul {
     display: flex;
     align-items: center;
-    padding: 0 16px;
     list-style: none;
     gap: 30px;
 }
