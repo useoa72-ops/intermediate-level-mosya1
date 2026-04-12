@@ -100,14 +100,24 @@ a {
 }
 
 #NEWS {
+    max-width: 1000px;
+    margin: 0 auto;
     margin-bottom: 200px;
+    padding: 0 10px;
 
 }
-
+.section-title .en{
+    font-size: 30px;
+    letter-spacing: 16px;
+    margin-bottom: 16px;
+}
+.section-title .ja{
+font-size: 20px;
+}
 #NEWS .list {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
 
 #NEWS .list li {
@@ -119,13 +129,13 @@ a {
 }
 
 #NEWS .list li:first-child {
-    padding: 10px 20px 10px 0;
+    
     border-left: none;
 }
 
 #NEWS .list li:last-child {
     border-right: none;
-    padding: 10px 0 10px 20px;
+    
 }
 
 
@@ -137,7 +147,8 @@ a {
 #NEWS .list li .date-area span {
 
     width: 40px;
-    height: 15px;
+    height: 20px;
+    line-height: 20px;
     background: color(black);
     color: #fff;
     text-decoration: none;
@@ -147,17 +158,18 @@ a {
     font-size: 10px;
     display: inline-block;
     text-align: center;
-    position: absolute;
-    top: 0;
-    left: 16px;
+    
 }
 
 @media screen and (max-width: 900px) {
 
-    #NEWS .list {
-        display: flex;
-        flex-direction: column;
+    #NEWS{
         margin-bottom: 80px;
+    }
+    #NEWS .list {
+       
+        flex-direction: column;
+        
     }
 
     #NEWS .list li {
@@ -171,20 +183,7 @@ a {
     #NEWS .list li :last-child {
         margin-bottom: 0;
     }
-
-    #ABOUT {
-        flex-direction: column;
-        margin-bottom: 80px;
-    }
-
-    i #footer .information2 {
-        flex-direction: column;
-        align-items: flex-start;
-
-    }
 }
-
-
 
 #ABOUT {
     display: flex;
@@ -207,6 +206,27 @@ a {
     line-height: 20px;
 }
 
+@media screen and (max-width: 900px){
+  #ABOUT {
+        flex-direction: column;
+        margin-bottom: 80px;
+    }  
+    #ABOUT .img{
+        width: 100%;
+        margin-bottom: 30px;
+    
+    }
+    #ABOUT .img img{
+        height: 300px;
+    }
+    #ABOUT .text{
+        width: 100%;
+        padding: 0 16px;
+    }
+
+
+}
+    
 #Business {
     margin-bottom: 200px;
 }
@@ -254,6 +274,20 @@ align-self : flex-end;}
 #Business .flex .item {
     margin-bottom: 60px;
 }
+
+
+    i #footer .information2 {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+
+
+
+
+
+
 
 
 
