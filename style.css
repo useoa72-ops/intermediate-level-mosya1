@@ -150,11 +150,11 @@ font-size: 20px;
     color: #fff;
     text-decoration: none;
     margin-bottom: 20px;
-    display: flex;
     margin-left: 10px;
     font-size: 10px;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
