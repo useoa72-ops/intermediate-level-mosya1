@@ -53,7 +53,7 @@ a {
     width: 100%;
     height: auto;
 }
-#header .inner-wrapper nav ul {
+#header .inner-wrapper  {
     display: flex;
     align-items: center;
     list-style: none;
