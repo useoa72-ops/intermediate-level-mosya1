@@ -37,14 +37,11 @@ a {
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    margin: 0 auto;
-    width: 100%;
-    
 }
 #header .logo {
     width: 120px;
     line-height: 1px;
-    
+    margin-right: 60px;
     object-fit: contain;
     /*親要素の大きさに合わせて中身が拡大する。
     containは全体が拡大。画像全部が見えるように比率を保ったまま。rogo
@@ -64,8 +61,8 @@ a {
     gap: 30px;
 }
 
-#header .inner-wrapper li:first-child {
-    margin-left: 60px;
+#header .inner li:last-child {
+    margin-right: 0px;
 }
 
 #header .inquiry {
