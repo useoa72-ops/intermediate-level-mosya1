@@ -33,10 +33,9 @@ a {
 
 
 #header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
+     height: 80px;
+     width: 100%;
+    
 }
 #header .logo {
     width: 120px;
@@ -55,11 +54,20 @@ a {
 }
 #header .inner-wrapper  {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    list-style: none;
-    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    
 }
 
+#header .inner-wrapper nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+
+}
 #header .inner li:last-child {
     margin-right: 0px;
 }
