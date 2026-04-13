@@ -70,7 +70,8 @@ a {
 
 }
 #header .inner li:last-child {
-    margin-right: 0px;
+    margin-right: 0;
+    padding: 0 0;
 }
 
 #header .inquiry {
@@ -123,7 +124,9 @@ a {
 }
 
 #NEWS {
+    display: flex;
     margin-bottom: 200px;
+    width: 100%;
 
 }
 .section-title .en{
@@ -208,18 +211,19 @@ font-size: 20px;
 #ABOUT {
     display: flex;
     margin-bottom: 120px;
+    width: 100%;
 }
 
 #ABOUT img {
     margin-bottom: 30px;
     width: 800px;
-    height: 400pxs;
+    height: 400px;
     margin-left: 0%;
     object-fit: cover;
 }
 
 #ABOUT .text {
-    padding: 180px 60px 0px 60px;
+    padding: 180px 40px 0px 40px;
 }
 
 #ABOUT .text p {
@@ -248,7 +252,9 @@ font-size: 20px;
 }
     
 #Business {
+    display: flex;
     margin-bottom: 200px;
+    width: 100%;
 }
 
 #BUSINESS .flex {
