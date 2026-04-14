@@ -209,13 +209,13 @@ font-size: 20px;
     }
 }
 
-#ABOUT {
+#ABOUT.wrapper{
     display: flex;
     margin-bottom: 120px;
     width: 100%;
 }
 
-#ABOUT img {
+#ABOUT.wrapper .about img {
     margin-bottom: 30px;
     width: 800px;
     height: 400px;
@@ -223,11 +223,11 @@ font-size: 20px;
     object-fit: cover;
 }
 
-#ABOUT .text {
+#ABOUT.wrapper .text {
     padding: 180px 40px 0px 40px;
 }
 
-#ABOUT .text p {
+#ABOUT.wrapper .text p {
     line-height: 20px;
 }
 
