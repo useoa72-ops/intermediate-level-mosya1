@@ -225,9 +225,11 @@ font-size: 20px;
 
 #ABOUT.wrapper .text {
     padding: 180px 40px 0px 40px;
+    width: 100%;
 }
 
 #ABOUT.wrapper .text p {
+    display: block;
     line-height: 20px;
 }
 
